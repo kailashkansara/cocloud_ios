@@ -215,14 +215,14 @@ struct NCAutoUploadView: View {
             }
             .font(.headline)
 
-            if #available(iOS 26.0, *) {
-                toggle
-                    .toggleStyle(.button)
-                    .buttonStyle(.glass)
-            } else {
+//            if #available(iOS 26.0, *) {
+//                toggle
+//                    .toggleStyle(.button)
+//                    .buttonStyle(.glass)
+//            } else {
                 toggle
                     .toggleStyle(AutoUploadProminentButtonStyle(model: model))
-            }
+            //}
         })
     }
 }

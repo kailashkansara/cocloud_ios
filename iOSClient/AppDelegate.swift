@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     var loginFlowV2Endpoint = ""
     var loginFlowV2Login = ""
 
-    let backgroundQueue = DispatchQueue(label: "com.nextcloud.bgTaskQueue")
+    let backgroundQueue = DispatchQueue(label: "com.maekotech.cocloud.bgTaskQueue")
     let global = NCGlobal.shared
 
     var bgTask: UIBackgroundTaskIdentifier = .invalid

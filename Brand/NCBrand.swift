@@ -23,11 +23,11 @@ let userAgent: String = {
 final class NCBrandOptions: @unchecked Sendable {
     static let shared = NCBrandOptions()
 
-    var brand: String = "Nextcloud"
+    var brand: String = "CoCloud"
     var brandUserAgent: String = ""
-    var textCopyrightNextcloudiOS: String = "Nextcloud Matheria for iOS %@ © 2025"
-    var textCopyrightNextcloudServer: String = "Nextcloud Server %@"
-    var loginBaseUrl: String = "https://cloud.nextcloud.com"
+    var textCopyrightNextcloudiOS: String = "Cocloud for iOS %@ © 2025"
+    var textCopyrightNextcloudServer: String = "Cocloud Server %@"
+    var loginBaseUrl: String = "https://cocloud.kansaratech.com"
     var pushNotificationServerProxy: String = ""
     var linkLoginHost: String = "https://nextcloud.com/install"
     var linkloginPreferredProviders: String = "https://nextcloud.com/signup-ios"
@@ -41,8 +41,8 @@ final class NCBrandOptions: @unchecked Sendable {
     var folderDefaultAutoUpload: String = "Photos"
 
     // Capabilities Group
-    var capabilitiesGroup: String = "group.it.twsweb.Crypto-Cloud"
-    var capabilitiesGroupApps: String = "group.com.nextcloud.apps"
+    var capabilitiesGroup: String = "group.com.maekotech.cocloud.Crypto-Cloud"
+    var capabilitiesGroupApps: String = "group.com.maekotech.cocloud.apps"
 
     // BRAND ONLY
     var use_AppConfig: Bool = false                                                         // Don't touch me !!
@@ -60,9 +60,9 @@ final class NCBrandOptions: @unchecked Sendable {
     var disable_mobileconfig: Bool = false  
     var disable_show_more_nextcloud_apps_in_settings: Bool = false
     var doNotAskPasscodeAtStartup: Bool = false
-    var disable_source_code_in_settings: Bool = false
+    var disable_source_code_in_settings: Bool = true
     var enforce_passcode_lock = false
-    var enforce_privacyScreenEnabled = false
+    var enforce_privacyScreenEnabled = true
 
     // Example: (name: "Name 1", url: "https://cloud.nextcloud.com"),(name: "Name 2", url: "https://cloud.nextcloud.com")
     var enforce_servers: [(name: String, url: String)] = []

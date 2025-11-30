@@ -6,7 +6,8 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.it.twsweb.Crypto-Cloud</string>
+		<string>group.com.maekotech.cocloud.Crypto-Cloud</string>
+		<string>group.com.maekotech.cocloud</string>
 	</array>
 	<key>com.apple.security.network.client</key>
 	<true/>

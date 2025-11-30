@@ -27,9 +27,9 @@ final class NCGlobal: Sendable {
 
     // Service
     //
-    let metadataKeyedUnarchiver                     = "it.twsweb.nextcloud.metadata"
-    let refreshTask                                 = "com.nextcloud.refreshTask"
-    let processingTask                              = "com.nextcloud.processingTask"
+    let metadataKeyedUnarchiver                     = "com.maekotech.cocloud.nextcloud.metadata"
+    let refreshTask                                 = "com.maekotech.cocloud.refreshTask"
+    let processingTask                              = "com.maekotech.cocloud.processingTask"
 
     // App
     //
@@ -373,7 +373,7 @@ final class NCGlobal: Sendable {
 
     // DRAG & DROP
     //
-    let metadataOcIdDataRepresentation      = "text/com.nextcloud.ocId"
+    let metadataOcIdDataRepresentation      = "text/com.maekotech.cocloud.ocId"
 
     // GROUP AMIN
     //

@@ -72,10 +72,10 @@ struct ToastBannerView: View {
 
     @ViewBuilder
     func containerView<Content: View>(@ViewBuilder _ content: () -> Content) -> some View {
-        if #available(iOS 26, *) {
-            content()
-                .glassEffect(.regular, in: RoundedRectangle(cornerRadius: 22))
-        } else {
+//        if #available(iOS 26, *) {
+//            content()
+//                .glassEffect(.regular, in: RoundedRectangle(cornerRadius: 22))
+//        } else {
             content()
                 .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 22.0))
                 .overlay(
@@ -83,7 +83,7 @@ struct ToastBannerView: View {
                         .stroke(.white.opacity(0.9), lineWidth: 0.6)
                 )
                 .shadow(color: .black.opacity(0.5), radius: 10, x: 0, y: 4)
-        }
+        //}
     }
 }
 
@@ -129,23 +129,24 @@ func showToastBanner(
     imageAnimation: LucidBanner.LucidBannerAnimationStyle = .none,
     onTap: ((_ token: Int, _ stage: String?) -> Void)? = nil) -> Int {
 
-    return LucidBanner.shared.show(
-        scene: scene,
-        title: title,
-        subtitle: subtitle,
-        footnote: footnote,
-        systemImage: systemImage,
-        imageAnimation: imageAnimation,
-        maxWidth: 0,
-        vPosition: .bottom,
-        hAlignment: .center,
-        verticalMargin: 55,
-        onTap: { token, stage in
-            onTap?(token, stage)
-        }
-    ) { state in
-        ToastBannerView(state: state)
-    }
+//    return LucidBanner.shared.show(
+//        scene: scene,
+//        title: title,
+//        subtitle: subtitle,
+//        footnote: footnote,
+//        systemImage: systemImage,
+//        imageAnimation: imageAnimation,
+//        maxWidth: 0,
+//        vPosition: .bottom,
+//        hAlignment: .center,
+//        verticalMargin: 55,
+//        onTap: { token, stage in
+//            onTap?(token, stage)
+//        }
+//    ) { state in
+//        ToastBannerView(state: state)
+//    }
+        return 0
 }
 
 // MARK: - Preview

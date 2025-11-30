@@ -69,10 +69,10 @@ struct HudBannerView: View {
 
     @ViewBuilder
     func containerView<Content: View>(@ViewBuilder _ content: () -> Content) -> some View {
-        if #available(iOS 26, *) {
-            content()
-                .glassEffect(.regular, in: RoundedRectangle(cornerRadius: 22))
-        } else {
+//        if #available(iOS 26, *) {
+//            content()
+//                .glassEffect(.regular, in: RoundedRectangle(cornerRadius: 22))
+//        } else {
             content()
                 .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 22.0))
                 .overlay(
@@ -80,7 +80,7 @@ struct HudBannerView: View {
                         .stroke(.white.opacity(0.9), lineWidth: 0.6)
                 )
                 .shadow(color: .black.opacity(0.5), radius: 10, x: 0, y: 4)
-        }
+        //}
     }
 }
 
@@ -93,20 +93,21 @@ func showHudBanner(
     subtitle: String? = nil,
     onTap: ((_ token: Int, _ stage: String?) -> Void)? = nil) -> Int {
 
-    LucidBanner.shared.show(
-        scene: scene,
-        title: title,
-        subtitle: subtitle,
-        maxWidth: 300,
-        vPosition: .center,
-        swipeToDismiss: false,
-        blocksTouches: true,
-        onTap: { token, stage in
-            onTap?(token, stage)
-        }
-    ) { state in
-        HudBannerView(state: state)
-    }
+//    LucidBanner.shared.show(
+//        scene: scene,
+//        title: title,
+//        subtitle: subtitle,
+//        //maxWidth: 300,
+//        vPosition: .center,
+//        swipeToDismiss: false,
+//        blocksTouches: true,
+//        onTap: { token, stage in
+//            onTap?(token, stage)
+//        }
+//    ) { state in
+//        HudBannerView(state: state)
+//    } content: <#(LucidBannerState) -> _#>
+        return 0
 }
 
 // MARK: - Preview

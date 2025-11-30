@@ -6,13 +6,14 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.it.twsweb.Crypto-Cloud</string>
+		<string>group.com.maekotech.cocloud</string>
+		<string>group.com.maekotech.cocloud.Crypto-Cloud</string>
 	</array>
 	<key>com.apple.security.network.client</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)it.twsweb.Crypto-Cloud</string>
+		<string>$(AppIdentifierPrefix)com.maekotech.cocloud.Widget</string>
 	</array>
 </dict>
 </plist>
