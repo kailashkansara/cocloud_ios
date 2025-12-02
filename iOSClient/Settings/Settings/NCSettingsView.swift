@@ -194,39 +194,39 @@ struct NCSettingsView: View {
             // `Information` Section
             Section(header: Text(NSLocalizedString("_information_", comment: "")), content: {
                 // Acknowledgements
-                Button(action: {
-                    showAcknowledgements.toggle()
-                }, label: {
-                    HStack {
-                        Image("acknowledgements")
-                            .resizable()
-                            .renderingMode(.template)
-                            .frame(width: 25, height: 25)
-                            .foregroundColor(Color(NCBrandColor.shared.iconImageColor))
-                        Text(NSLocalizedString("_acknowledgements_", comment: ""))
-                    }
-                })
-                .tint(Color(NCBrandColor.shared.textColor))
-                .sheet(isPresented: $showAcknowledgements) {
-                    NCAcknowledgementsView(browserTitle: NSLocalizedString("_acknowledgements_", comment: ""))
-                }
+//                Button(action: {
+//                    showAcknowledgements.toggle()
+//                }, label: {
+//                    HStack {
+//                        Image("acknowledgements")
+//                            .resizable()
+//                            .renderingMode(.template)
+//                            .frame(width: 25, height: 25)
+//                            .foregroundColor(Color(NCBrandColor.shared.iconImageColor))
+//                        Text(NSLocalizedString("_acknowledgements_", comment: ""))
+//                    }
+//                })
+//                .tint(Color(NCBrandColor.shared.textColor))
+//                .sheet(isPresented: $showAcknowledgements) {
+//                    NCAcknowledgementsView(browserTitle: NSLocalizedString("_acknowledgements_", comment: ""))
+//                }
                 // Terms & Privacy Conditions
-                Button(action: {
-                    showBrowser.toggle()
-                }, label: {
-                    HStack {
-                        Image(systemName: "shield.checkerboard")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 25, height: 25)
-                            .foregroundColor(Color(NCBrandColor.shared.iconImageColor))
-                        Text(NSLocalizedString("_privacy_legal_", comment: ""))
-                    }
-                })
-                .tint(Color(NCBrandColor.shared.textColor))
-                .sheet(isPresented: $showBrowser) {
-                    NCBrowserWebView(urlBase: URL(string: NCBrandOptions.shared.privacy)!, browserTitle: NSLocalizedString("_privacy_legal_", comment: ""))
-                }
+//                Button(action: {
+//                    showBrowser.toggle()
+//                }, label: {
+//                    HStack {
+//                        Image(systemName: "shield.checkerboard")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 25, height: 25)
+//                            .foregroundColor(Color(NCBrandColor.shared.iconImageColor))
+//                        Text(NSLocalizedString("_privacy_legal_", comment: ""))
+//                    }
+//                })
+//                .tint(Color(NCBrandColor.shared.textColor))
+//                .sheet(isPresented: $showBrowser) {
+//                    NCBrowserWebView(urlBase: URL(string: NCBrandOptions.shared.privacy)!, browserTitle: NSLocalizedString("_privacy_legal_", comment: ""))
+//                }
                 // Source Code Nextcloud App
                 if !NCBrandOptions.shared.disable_source_code_in_settings {
                     Button(action: {

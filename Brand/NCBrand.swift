@@ -29,10 +29,10 @@ final class NCBrandOptions: @unchecked Sendable {
     var textCopyrightNextcloudServer: String = "Cocloud Server %@"
     var loginBaseUrl: String = "https://cocloud.kansaratech.com"
     var pushNotificationServerProxy: String = ""
-    var linkLoginHost: String = "https://nextcloud.com/install"
-    var linkloginPreferredProviders: String = "https://nextcloud.com/signup-ios"
+    var linkLoginHost: String = "https://cocloud.kansaratech.com"
+    var linkloginPreferredProviders: String = "https://cocloud.kansaratech.com/signup-ios"
     var webLoginAutenticationProtocol: String = "nc://"                                        // example "abc://"
-    var privacy: String = "https://nextcloud.com/privacy"
+    var privacy: String = "https:///*nextcloud*/.com/privacy"
     var sourceCode: String = "https://github.com/nextcloud/ios"
     var mobileconfig: String = "/remote.php/dav/provisioning/apple-provisioning.mobileconfig"
     var appStoreUrl: String = "https://apps.apple.com/in/app/nextcloud/id1125420102"
@@ -58,7 +58,7 @@ final class NCBrandOptions: @unchecked Sendable {
     var disable_crash_service: Bool = false
     var disable_log: Bool = false
     var disable_mobileconfig: Bool = false  
-    var disable_show_more_nextcloud_apps_in_settings: Bool = false
+    var disable_show_more_nextcloud_apps_in_settings: Bool = true
     var doNotAskPasscodeAtStartup: Bool = false
     var disable_source_code_in_settings: Bool = true
     var enforce_passcode_lock = false
